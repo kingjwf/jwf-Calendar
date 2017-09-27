@@ -167,7 +167,7 @@
     sizeCircle = sizeCircle*0.8;  //获取label的宽高最小值，缩放0.8倍，取圆形区域显示选中项
     selectLabel.frame = CGRectMake(dayLable.frame.origin.x+(dayLable.frame.size.width-sizeCircle)/2, dayLable.frame.origin.y+(dayLable.frame.size.height-sizeCircle)/2, sizeCircle, sizeCircle);
     selectLabel.hidden = NO;
-    selectLabel.layer.cornerRadius = sizeCircle/2;
+    selectLabel.layer.cornerRadius = sizeCircle/2;  //圆形的
     selectLabel.layer.masksToBounds = YES;
     selectLabel.font = dayLable.font;
     selectLabel.text = dayLable.text;
